@@ -457,7 +457,7 @@ td {
   padding: 4px 8px;
   border-radius: 12px;
   font-weight: bold;
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .stock.good {

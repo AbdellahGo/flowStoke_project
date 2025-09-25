@@ -134,6 +134,7 @@ main {
   color: var(--white);
   background-color: var(--bg-text-secondary-opacity-blue);
   padding: 16px;
+  text-align: center;
   font-size: 15px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -152,6 +153,7 @@ main {
 }
 
 .create-account-b {
+  text-align: center;
   margin-top: 25px;
   display: block;
   width: 100%;
