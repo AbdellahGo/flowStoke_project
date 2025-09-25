@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/signIn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>flowStock</title>
+  </head>
+  <body>
+    <main>
+      <div class="sign-in-container">
+        <div class="brand-container">
+          <div class="logo-container">
+            <img src="../asets/logo.svg" alt="logo" />
+          </div>
+          <h1 class="brand">flowStock</h1>
+          <p>Portail d'identification</p>
+        </div>
+        <div class="form-container">
+          <div class="form-head">
+            <h2>Authentification</h2>
+            <p>Veuillez vous connecter</p>
+          </div>
+          <form action="" class="signin-form">
+            <div class="input-container">
+              <span>Email</span>
+              <input
+                required
+                type="email"
+                id="email"
+                placeholder="Enterz votre identifiant"
+                class="email-input"
+              />
+            </div>
+            <div class="input-container">
+              <span>Mot de passe</span>
+              <input
+                required
+                type="password"
+                id="password"
+                class="password-input"
+                placeholder="Entrez votre mot de passe"
+              />
+            </div>
+            <a class="submit-button" href="dashboard.html">Se connecter</a>
+          </form>
+          <button class="create-account-b">Créer un compte ?</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

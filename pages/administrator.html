@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/secretary.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>flowStock - Secrétaire</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="logo-container">
+          <img src="../asets/blueLogo.svg" alt="logo" />
+          <h2>flowStock</h2>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="/index.html" >
+                <img src="../asets/home.svg" alt="home icon" />
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a href="secretary.html">
+                <img src="../asets/greyUser.svg" alt="user icon" />
+                Secrétaire
+              </a>
+            </li>
+            <li>
+              <a href="gastonner.html">
+                <img src="../asets/greyUser.svg" alt="user icon" />
+                Gastonner
+              </a>
+            </li>
+            <li>
+              <a href="administrator.html" class="active">
+                <img src="../asets/greyUser.svg" alt="user icon" />
+                Administrator
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <div class="user-info">
+          <div>
+            <span class="user-name">Robert Lampion</span>
+            <small>Secretary</small>
+          </div>
+          <span class="img-container">
+            <img src="../asets/blueUser.svg" alt="" />
+          </span>
+        </div>
+        <a class="logout-btn" href="signIn.html"> Déconnexion </a>
+      </div>
+    </header>
+
+    <main class="secretary-dashboard">
+      <!-- Banner -->
+      <section class="welcome-banner">
+        <div class="banner-text">
+          <h1>Bonjour Robert Lampion</h1>
+          <p>Votre espace de consultation et de gestion documentaire</p>
+          <span class="role-badge">
+            <img src="../asets/users.svg" alt="users icon" />
+            Votre rôle est: Administrator
+          </span>
+        </div>
+        <div class="banner-image">
+          <img src="../asets/bannerImage.svg" alt="banner image" />
+        </div>
+      </section>
+
+      <!-- Cards -->
+      <section class="cards">
+        <div class="card">
+          <div>
+            <h3>Consultations Aujourd'hui</h3>
+            <p class="card-value">12</p>
+            <span>Produits consultés</span>
+          </div>
+          <div class="image-container">
+            <img src="../asets/eye.svg" alt="eye icon" />
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <h3>Ventes du Mois</h3>
+            <p class="card-value">24</p>
+            <span>Articles vendus</span>
+          </div>
+          <div class="image-container">
+            <img src="../asets/arrow.svg" alt="arrow icon" />
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <h3>Rapports Générés</h3>
+            <p class="card-value">3</p>
+            <span>Rapports consultés</span>
+          </div>
+          <div class="image-container">
+            <img src="../asets/file.svg" alt="file icon" />
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <h3>Alertes Stock</h3>
+            <p class="card-value">3</p>
+            <span>Produits en rupture</span>
+          </div>
+          <div class="image-container">
+            <img src="../asets/alert.svg" alt="alert icon" />
+          </div>
+        </div>
+      </section>
+
+      <!-- produit récentes consulter -->
+      <section class="produit-consulter recent-products">
+        <div>
+          <img src="../asets/eye.svg" alt="eye box" />
+          <h2>Consultés Récemment</h2>
+        </div>
+        <ul class="product-list">
+          <li>
+            <div>
+              <strong>Produit8</strong>
+              <p>test60 Prénomtest60</p>
+              <span class="price">45,25 €</span>
+            </div>
+            <div class="stock">
+              <span>Il y a 15min</span>
+              <small class="good">Stock: 06</small>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Produit7</strong>
+              <p>Lampion Robert</p>
+              <span class="price">245,50 €</span>
+            </div>
+            <div class="stock">
+              <span>Il y a 15min</span>
+              <small class="low">Stock: 04</small>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Produit6</strong>
+              <p>Dalia Rosa François</p>
+              <span class="price">150,25 €</span>
+            </div>
+            <div class="stock">
+              <span>Il y a 15min</span>
+              <small class="low">Stock: 02</small>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Title -->
+      <section class="page-header">
+        <div>
+          <h1>
+            <img
+              style="width: 32px; height: 32px"
+              src="../asets/blueBox.svg"
+              alt=""
+            />
+            Listing des produits
+          </h1>
+          <p>Gestion et consultation des produits en stock</p>
+        </div>
+      </section>
+
+      <!-- Search -->
+      <section class="search-bar">
+        <input
+          type="text"
+          placeholder="Rechercher un produit, description ou propriétaire..."
+        />
+        <button class="filter-btn">
+          <img src="../asets/fillter.svg" alt="fillter icon" />
+          Filtres
+        </button>
+      </section>
+
+      <!-- Table -->
+      <section class="products-list">
+        <div style="display: flex; justify-content: space-between;">
+          <h2>Produits (9)</h2>
+          <div class="download-icons" style="display: flex; gap: 10px; align-items: center; margin-bottom: 12px;">
+            <button class="btn pdf" style="padding: 6px; border-radius: 6px; cursor: pointer; background: white;">
+              <i class="fa-solid fa-file-pdf"></i> PDF
+            </button>
+            <button class="btn csv" style="padding: 6px; border-radius: 6px; cursor: pointer; background: white;">
+              <i class="fa-solid fa-file-csv"></i> CSV
+            </button>
+            <button class="btn json" style="padding: 6px; border-radius: 6px; cursor: pointer; background: white;">
+              <i class="fa-solid fa-code"></i> JSON
+            </button>
+            <button class="btn docx" style="padding: 6px; border-radius: 6px; cursor: pointer; background: white;">
+              <i class="fa-solid fa-file-word"></i> DOCX
+            </button>
+          </div>
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Libellé Produit</th>
+                <th>Description Produit</th>
+                <th>Prix Produit</th>
+                <th>Mise en vente le</th>
+                <th>Stock Produit</th>
+                <th>Propriétaire</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>dsqd</td>
+                <td>sqdsqd</td>
+                <td>58.00 €</td>
+                <td>17/08/2024</td>
+                <td><span class="stock good">10</span></td>
+                <td>Dalla Rosa François</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td>NomProd1</td>
+                <td>description1</td>
+                <td>140.25 €</td>
+                <td>19/05/2022</td>
+                <td><span class="stock low">5</span></td>
+                <td>Test4dd Prénom4</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td>NomProd2</td>
+                <td>description2</td>
+                <td>160.25 €</td>
+                <td>19/05/2022</td>
+                <td><span class="stock good">12</span></td>
+                <td>Test9 Prénom9</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td>NomProd3</td>
+                <td>description3</td>
+                <td>180.25 €</td>
+                <td>18/05/2022</td>
+                <td><span class="stock good">10</span></td>
+                <td>Testtrieze Prénometstrelze</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td>NomProd4</td>
+                <td>description4</td>
+                <td>45.25 €</td>
+                <td>18/05/2022</td>
+                <td><span class="stock good">8</span></td>
+                <td>Test465 PrénomTest465</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td>NomProd5</td>
+                <td>description5</td>
+                <td>66.50 €</td>
+                <td>18/05/2022</td>
+                <td><span class="stock good">8</span></td>
+                <td>Test465 PrénomTest465</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Produit6</td>
+                <td>Desc6</td>
+                <td>150.25 €</td>
+                <td>21/08/2024</td>
+                <td><span class="stock good">10</span></td>
+                <td>Dalla Rosa François</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Produit7</td>
+                <td>Desc7</td>
+                <td>245.50 €</td>
+                <td>23/09/2024</td>
+                <td><span class="stock low">5</span></td>
+                <td>Lampion Robert</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr>
+                <td>Produit8</td>
+                <td>Desc8</td>
+                <td>45.25 €</td>
+                <td>05/08/2024</td>
+                <td><span class="stock low">0</span></td>
+                <td>test60 Prénomtest60</td>
+                <td class="actions">
+                  <a href="view.html"
+                    ><i class="fa-solid fa-eye" title="Lire"></i
+                  ></a>
+                  <a href="edit.html"
+                    ><i class="fa-solid fa-pen-to-square" title="Modifier"></i
+                  ></a>
+                  <a href="delete.html"
+                    ><i class="fa-solid fa-trash" title="Supprimer"></i
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="table-footer">
+          <p>Affichage de 1 à 9 sur 9 entrées</p>
+          <div class="pagination">
+            <button>Précédent</button>
+            <button class="active">1</button>
+            <button>Suivant</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
