@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créer un produit - FlowStock</title>
+  <link rel="stylesheet" href="../styles/create.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Créer un produit</h1>
+      <p>Ajoutez un nouveau produit dans votre stock.</p>
+    </div>
+
+    <form class="product-form">
+      <div class="form-group">
+        <label for="name">Libellé Produit</label>
+        <input type="text" id="name" placeholder="Ex: ProduitX" required>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description Produit</label>
+        <textarea id="description" placeholder="Courte description..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Prix (€)</label>
+        <input type="number" id="price" step="0.01" placeholder="0.00" required>
+      </div>
+
+      <div class="form-group">
+        <label for="stock">Quantité en stock</label>
+        <input type="number" id="stock" placeholder="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="owner">Propriétaire</label>
+        <input type="text" id="owner" placeholder="Nom propriétaire" required>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">
+          <i class="fa-solid fa-plus"></i> Créer le produit
+        </button>
+        <a href="products.html" class="btn secondary">Annuler</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
